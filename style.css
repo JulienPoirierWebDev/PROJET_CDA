@@ -1,6 +1,29 @@
 * {
-    margin:0;
-    padding:0;
-    box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 }
 
+/* --------- SECTION  -----------3*/
+
+.conteneur {
+	background-image: url('./public/images/bg-pattern-circles.svg');
+	background-color: rgb(1, 1, 59);
+	background-position: absolute;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	border-radius: 0% 25% 0% 25%;
+}
+.element_a {
+	width: 50%;
+}
+section {
+	background-color: rgb(2, 2, 53);
+	border-radius: 0% 25% 0% 25%;
+	background-image: url('./public/images/bg-pattern-circles.svg');
+	background-position: absolute;
+}
+.element_a {
+	color: aliceblue;
+}
