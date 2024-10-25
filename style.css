@@ -4,3 +4,39 @@
     box-sizing: border-box;
 }
 
+.section2 h1 {
+    text-align: center;
+    position:relative;
+    top:50px;
+}
+
+.section2 .mobile {
+    display: none;
+}
+
+.section2 .paragraph-container {
+    display:flex;
+    flex-direction: column;
+    width:50vw;
+    justify-content: space-evenly;
+    padding:5vw;
+    gap: 50px;
+}
+
+.section2>div {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.section2 .image-container {
+    width:35vw;
+    overflow: hidden;
+}
+
+.section2 .desktop {
+    width: 50vw;
+}
+
+.section2 .paragraph h2 {
+    margin-bottom: 15px;
+}
