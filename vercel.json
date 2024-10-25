@@ -1,0 +1,37 @@
+{
+	"version": 2,
+	"public": true,
+	"builds": [
+		{
+			"src": "index.html",
+			"use": "@vercel/static"
+		},
+		{
+			"src": "public/**/*",
+			"use": "@vercel/static"
+		}
+	],
+	"routes": [
+		{
+			"src": "/public/(.*)",
+			"dest": "/public/$1"
+		},
+		{
+			"src": "/(.*)",
+			"dest": "/index.html"
+		}
+	],
+	"cleanUrls": true,
+	"trailingSlash": false,
+	"headers": [
+		{
+			"source": "/public/(.*).(js|css|png|jpg|svg|woff|woff2|ttf|ico)",
+			"headers": [
+				{
+					"key": "Cache-Control",
+					"value": "public, max-age=31536000, immutable"
+				}
+			]
+		}
+	]
+}
