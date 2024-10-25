@@ -12,6 +12,27 @@
   <style>
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
+    .conteneur {
+      background-image: url("./public/images/bg-pattern-circles.svg");
+      background-color: rgb(1, 1, 59);
+      background-position : absolute ;
+      display : flex ;
+      justify-content: space-between;
+      flex-wrap: wrap;      
+      border-radius: 0% 25% 0% 25%;
+    }
+    .element_a {
+      width: 50%;
+    }
+    section{
+      background-color: rgb(2, 2, 53);
+      border-radius: 0% 25% 0% 25%;
+      background-image: url("./public/images/bg-pattern-circles.svg");
+      background-position:absolute
+    }
+    .element_a{
+      color: aliceblue;
+    }
   </style>
 </head>
 <body>
@@ -56,10 +77,17 @@
   Robust content management
   Flexible content management enables users to easily move through posts. Increase the usability of your blog 
   by adding customized categories, sections, format, or flow. With this functionality, you’re in full control.
+<section>
+ <div class = "conteneur">
+  <div class = "image"> <img src="./public/images/illustration-phones.svg" alt="" title="" /> </div>
 
-  State of the Art Infrastructure
-  With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity. 
+   <div class="element_a"> <h1>State of the Art Infrastructure </h1><p>
+  With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity.
   This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.
+</p> 
+   </div>
+ </div>
+</section>
 
   Free, open, simple
   Blogr is a free and open source application backed by a large community of helpful developers. It supports 
